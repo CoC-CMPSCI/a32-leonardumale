@@ -4,20 +4,18 @@ using namespace std;
 
 int main()
 {
-    int numMale, numFemale, numOthers;
-    double percM, percF, percO;
-    int total;
+    double C, F;
 
-    cin >> numMale >> numFemale >> numOthers;
+    // Step 1: Input Celsius
+    cin >> C;
 
-    total = numMale + numFemale + numOthers;
-
-    percM = (double)numMale / total * 100;
-    percF = (double)numFemale / total * 100;
-    percO = (double)numOthers / total * 100;
+    // Step 2: Convert to Fahrenheit
+    F = (9 / 5.0) * C + 32;
 
     cout << fixed << setprecision(2);
-    cout << percM << ", " << percF << ", " << percO;
+
+    // Step 3: Print Fahrenheit
+    cout << F << endl;
 
     return 0;
 }
